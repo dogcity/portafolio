@@ -1,7 +1,7 @@
 import logo from '../../assets/images/logo.svg'
-import './App.css'
+import './Example.css'
 
-const App = () => {
+const Example = () => {
   return (
     <div className='App'>
       <header className='App-header'>
@@ -26,4 +26,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Example

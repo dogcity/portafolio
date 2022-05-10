@@ -3,17 +3,13 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import reportWebVitals from './reportWebVitals'
-import { App } from './containers'
+import App from './containers/App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <BrowserRouter basename='/'>
-      <Routes>
-        <Route exact path='/' element={<App />} />
-        <Route path='/404' element={<App />} />
-        <Route element={<App />} />
-      </Routes>
+      <App routerDom={{ Routes, Route }} />
     </BrowserRouter>
   </React.StrictMode>,
 )
