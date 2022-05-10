@@ -35,7 +35,7 @@ module.exports = {
     semi: ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],
     'object-curly-newline': ['error', { multiline: true }],
-    'max-len': ['error', { code: 100 }],
+    'max-len': ['error', { code: 120, ignoreStrings: true }],
     'operator-linebreak': ['error', 'before'],
     'arrow-parens': ['error', 'as-needed'],
     'react/prop-types': 0,
@@ -65,5 +65,8 @@ module.exports = {
       { allowArrowFunctions: true },
     ],
     'no-console': ['warn', { allow: ['warn', 'info', 'error'] }],
+    'react/no-array-index-key': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'no-shadow': 'warn',
   },
 }
